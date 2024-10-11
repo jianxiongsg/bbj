@@ -1,0 +1,68 @@
+/* components/component-log-card/index.wxss */
+@import "../../../../common/common-wxss/index.wxss";
+.log_card{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40rpx;
+}
+.log_card_top{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 16rpx;
+}
+.log_card_top_title{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.log_card_top_icon{
+  width: 20rpx;
+  height: 20rpx;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.log_card_day{
+  font-size: 36rpx;
+  color: #000000;
+}
+.log_card_week{
+  font-size: 28rpx;
+  color: #000000;
+}
+.log_card_content{
+  position: relative;
+  width: 674rpx;
+  height: auto;
+  border-radius: 12rpx;
+  padding-top: 30rpx;
+  background-color: #ffffff;
+  margin-left: 46rpx;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.log_card_content_title{
+  position: relative;
+}
+.log_card_content_weight{
+  position: absolute;
+  left: 334rpx;
+}
+.log_card_content_btm{
+  margin-top: 28rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.log_card_line{
+  position: absolute;
+  top: 40rpx;
+  left: 24rpx;
+  width: 4rpx;
+  background-color: #bbbbbb;
+  height: calc(100% - 30rpx);
+}

@@ -1,0 +1,22 @@
+<view class="mian">
+  <view class="main_top">
+    <view class="main_top_avatar">
+      <image class="main_top_avatar_icon" src="https://gw.alicdn.com/imgextra/i1/O1CN01YsL0061cGU8lIXMqw_!!6000000003573-2-tps-768-768.png"></image>
+    </view>
+    <view class="main_top_nick">简红梅</view>
+    <view class="main_top_basic">
+      <text class="main_top_age">年龄: 4天</text>
+      <text class="ml10">身高: 80cm</text>
+      <text class="ml10">体重: 20kg</text>
+      <image class="main_top_edit ml10" src="https://gw.alicdn.com/imgextra/i2/O1CN0111RruU28MV2uZlIBP_!!6000000007918-2-tps-48-48.png"></image>
+    </view>
+  </view>
+  <view class="main_content">
+    <component-log-card></component-log-card>
+    <component-log-card></component-log-card>
+    <component-log-card></component-log-card>
+    <component-log-card></component-log-card>
+    <component-log-card></component-log-card>
+    <component-log-card></component-log-card>
+  </view>
+</view>

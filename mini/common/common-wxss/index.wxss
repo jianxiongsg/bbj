@@ -1,0 +1,9 @@
+.text-nowrap{
+  white-space: nowrap;
+}
+.ml10{
+  margin-left: 10rpx;
+}
+.ml8{
+  margin-left: 8rpx;
+}

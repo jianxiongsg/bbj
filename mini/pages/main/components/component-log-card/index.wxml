@@ -1,0 +1,22 @@
+<!--components/component-log-card/index.wxml-->
+<view class="log_card">
+  <view class="log_card_top">
+    <image class="log_card_top_icon" src="https://gw.alicdn.com/imgextra/i3/O1CN01q3JVed28VCZWaw7jb_!!6000000007937-2-tps-48-48.png"></image>
+    <view class="log_card_top_title">
+      <text class="log_card_day inline_text text-nowrap ml8">10月6日</text>
+      <text class="log_card_week inline_text text-nowrap ml10">2岁6个月</text>
+    </view>
+  </view>
+  <view class="log_card_content">
+    <view class="log_card_content_title">
+      <text class="log_card_content_height">身高 50.0cm</text>
+      <text class="log_card_content_weight">体重10.0kg</text>
+    </view>
+    <view class="log_card_content_btm">
+      <text class="log_card_content_height">爸爸，19小时前</text>
+    </view>
+    
+    
+  </view>
+  <view class="log_card_line"></view>
+</view>
