@@ -51,13 +51,18 @@ Component({
         this.data.cursor = e.detail.cursor || 0
       },
       onInput(e) {
-        console.log('...........e',e)
+        console.log('...........ea',e)
         const value = e.detail.value
-        this.data.comment.content = value
+        // this.data.comment.content = value
+        this.setData({
+          "comment.content":value
+        })
       },
       /** 发送 */
       handleSend() {
-        this.triggerEvent("commentEvent",this.data.comment.content);
+        const content = this.data.comment.content;
+        if(!content) return;
+        this.triggerEvent("commentEvent",content);
       },
       /** 显示表情包 */
       clickChooseEmoji:function(data){

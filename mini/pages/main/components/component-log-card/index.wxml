@@ -19,6 +19,35 @@
       </view>
     </view>
     
+    <view class="discuss-content" wx:if="{{commentList.length > 0}}">
+      <view wx:for="{{commentList}}" wx:key="index">
+        <view class="discuss" data-index="{{index}}" data-item="{{item}}" style="margin-bottom: 10rpx;">
+         
+            <view class="discuss-last-item" data-index="{{index}}" bindtap="clickDiscuss" capture-bind:longpress="longpressDelete" style="margin-bottom: 5rpx;">
+              <view>{{item.nick}}</view>
+              <view>
+                <text class="discuss_reply_text" style="color:#8a8484;">回复</text>
+                <text>{{item.replyNick}}：</text>
+                <text class="cont-2" wx:if="{{item.content != null}}" style="color:#8a8484;">{{item.content}}</text>
+              </view>
+              
+            </view>
+          
+
+
+        </view>
+
+      </view>
+      <input 
+        class="discuss_reply_input" 
+        cursor-spacing="8px" 
+        placeholder="我也说一句" 
+        bind:focus="handleComment" 
+        wx:if="{{!showInput}}"
+      />
+    </view>
+
+
     
     
   </view>

@@ -5,7 +5,7 @@
           <label for="" class="reply_label">
             <input 
               class="reply_input" 
-              cursor-spacing="8px" 
+              cursor-spacing="8rpx" 
               confirm-type="send" 
               adjust-position="{{false}}" 
               confirm-hold value="{{comment.content}}" 
@@ -23,7 +23,7 @@
           <image src="{{theme === 'dark' ? './images/reply_tool_emoji_dark.svg' : './images/reply_tool_emoji.svg'}}" mode='aspectFit' class="reply_tool_pic"></image>
         </view>
        
-        <button size="mini" type="primary" bind:tap="handleSend">发送</button>
+        <button size="mini" type="{{comment.content.length ? 'primary' :'default'}}" bind:tap="handleSend">发送</button>
         
       </view>
       <!-- 表情包 -->

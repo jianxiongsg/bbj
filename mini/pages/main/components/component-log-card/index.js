@@ -39,8 +39,19 @@ Component({
       },
       onSend:function(data){
         console.log('.............data',data);
+        const commentInfo = {
+              id:this.data.commentList.length +1,
+              nick:"妈妈",
+              avatar:"https://gw.alicdn.com/imgextra/i3/O1CN01v0lMKq1OmAv5ZZrcW_!!6000000001747-2-tps-85-82.png",
+              content:data.detail,
+              time:Date.now(),
+              replyId:0,
+              replyNick:"爸爸"
+        }
+        
         this.setData({
-          showInput:false
+          showInput:false,
+          commentList:this.data.commentList.concat([commentInfo])
         })
       }
     }

@@ -85,3 +85,32 @@
   bottom: 0;
   z-index: 2;
 }
+
+
+
+
+
+
+.discuss-last-item{
+  width:90%;
+  height:auto;
+  padding-top:10rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+}
+.discuss_reply_text{
+  margin: 0 6rpx;
+}
+
+.discuss_reply_input {
+  font-size: 28rpx;
+  height: 60rpx; 
+  padding-left: 12rpx;
+  width: 630rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  caret-color: #1AAD19;
+  border: solid 1px #eeeeee;
+  
+}
