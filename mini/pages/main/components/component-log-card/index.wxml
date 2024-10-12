@@ -14,9 +14,16 @@
     </view>
     <view class="log_card_content_btm">
       <text class="log_card_content_height">爸爸，19小时前</text>
+      <view class="log_card_comment_btn" bind:tap="handleComment">
+        <image src="https://gw.alicdn.com/imgextra/i2/O1CN01rrAuUr2A3NkJTcIFm_!!6000000008147-2-tps-48-48.png"></image>
+      </view>
     </view>
+    
     
     
   </view>
   <view class="log_card_line"></view>
+  <view class="log_card_input">
+    <component-input bind:commentEvent="onSend" wx:if="{{showInput}}"></component-input>
+  </view>
 </view>

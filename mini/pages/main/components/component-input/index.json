@@ -1,6 +1,6 @@
 {
     "component": true,
     "usingComponents": {
-      "component-input": "../component-input"
+      "emoji": "./emoji"
     }
 }

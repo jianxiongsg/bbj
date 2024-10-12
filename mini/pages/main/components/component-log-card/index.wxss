@@ -54,6 +54,7 @@
   left: 334rpx;
 }
 .log_card_content_btm{
+  position: relative;
   margin-top: 28rpx;
   font-size: 28rpx;
   color: #999999;
@@ -65,4 +66,22 @@
   width: 4rpx;
   background-color: #bbbbbb;
   height: calc(100% - 30rpx);
+}
+.log_card_comment_btn{
+  position: absolute;
+  bottom: 0;
+  right: 20rpx;
+  width: 34rpx;
+  height: 34rpx;
+  
+}
+
+.log_card_comment_btn image{
+  width: 34rpx;
+  height: 34rpx;
+}
+.log_card_input{
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
 }
