@@ -11,6 +11,23 @@
       <image class="main_top_edit ml10" src="https://gw.alicdn.com/imgextra/i2/O1CN0111RruU28MV2uZlIBP_!!6000000007918-2-tps-48-48.png"></image>
     </view>
   </view>
+  <view class="main_parents">
+    <view class="main_parents_head">
+      <image class="main_parents_avatar_icon" src="https://gw.alicdn.com/imgextra/i2/O1CN010aEpTq1VZzhXT2GZn_!!6000000002668-2-tps-80-80.png"></image>
+      <view class="main_parents_avatar_nick">爸爸</view>
+    </view>
+    <view class="main_parents_love">
+      <image class="main_parents_love_line" src="https://gw.alicdn.com/imgextra/i1/O1CN01ejLaqB1mDPduTrdvg_!!6000000004920-2-tps-40-7.png"></image>
+      <image class="main_parents_love_icon" src="https://gw.alicdn.com/imgextra/i2/O1CN018yhGvz1qDeJM3IEYX_!!6000000005462-2-tps-59-48.png"></image>
+      <image class="main_parents_love_rline" src="https://gw.alicdn.com/imgextra/i1/O1CN01ejLaqB1mDPduTrdvg_!!6000000004920-2-tps-40-7.png"></image>
+    </view>
+    <view class="main_parents_head" bind:tap="onShare">
+      <image class="main_parents_avatar_icon" src="https://gw.alicdn.com/imgextra/i3/O1CN01IpSUXo1ybwF5gjQ37_!!6000000006598-2-tps-48-48.png"></image>
+      <view class="main_parents_avatar_nick">妈妈</view>
+      <button class="share_btn" open-type="share"></button>
+    </view>
+    
+  </view>
   <view class="main_content">
     <component-log-card></component-log-card>
     <component-log-card></component-log-card>

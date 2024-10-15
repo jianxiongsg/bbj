@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "component-log-card": "components/component-log-card"
-  }
+  },
+  "enableShareAppMessage":true
 }

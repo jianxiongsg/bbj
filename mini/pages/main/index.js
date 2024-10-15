@@ -1,3 +1,5 @@
+const { SHARE_CONFIG } = require("../../common/constants/share");
+
 // pages/main/index.js
 const app = getApp()
 Page({
@@ -73,4 +75,23 @@ Page({
   /**
    * 用户点击右上角分享
    */
+  onShareAppMessage(){
+    console.log('...........onShareAppMessage')
+    return {
+      userName: '小程序原始id', 
+      title: '测试标题',
+      imagePath: 'https://gw.alicdn.com/imgextra/i2/O1CN01fEX1lp1UEdaFYEpj7_!!6000000002486-2-tps-140-64.png',
+      webpageUrl: 'www.qq.com',
+      withShareTicket: true,
+      miniprogramType: 0,
+      scene: 0,
+      path:'pages/main/index'
+    }
+  },
+
+  onShare(){
+    console.log('..........222')
+    // wx.shareMiniProgramMessage(SHARE_CONFIG);
+    wx.showShareMenu({withShareTicket: true})
+  }
 })

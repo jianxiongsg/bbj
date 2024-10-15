@@ -56,3 +56,59 @@ page{
   position: relative;
   padding-top: 40rpx;
 }
+
+.main_parents{
+  position: relative;
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rpx;
+}
+.main_parents_head{
+  width: 120rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30rpx;
+  color: #000000;
+}
+
+.main_parents_avatar_icon{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.main_parents_love{
+  position: relative;
+  width: auto;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -40rpx;
+}
+.main_parents_love_line{
+  width: 40rpx;
+  height: 7rpx;
+}
+.main_parents_love_icon{
+  width: 60rpx;
+  height: 48rpx;
+  margin: 0 20rpx;
+}
+.main_parents_love_rline{
+  width: 40rpx;
+  height: 7rpx;
+  transform: scaleX(-1);
+}
+.share_btn{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
