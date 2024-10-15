@@ -1,4 +1,4 @@
-// const { postRequest,postParamsRequest } = require("../../utils/request");
+
 
 // pages/comment/comment.js
 Page({

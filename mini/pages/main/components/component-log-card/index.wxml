@@ -53,6 +53,6 @@
   </view>
   <view class="log_card_line"></view>
   <view class="log_card_input">
-    <component-input bind:commentEvent="onSend" wx:if="{{showInput}}"></component-input>
+    <component-input bind:commentEvent="onSend" bind:hideInput="hideInput" wx:if="{{showInput}}"></component-input>
   </view>
 </view>

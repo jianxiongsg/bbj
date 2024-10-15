@@ -1,5 +1,5 @@
-const { postParamsRequest,postRequest } = require("../../utils/request");
-import {getAge} from '../../utils/util'
+// const { postParamsRequest,postRequest } = require("../../utils/request");
+// import {getAge} from '../../utils/util'
 Page({
 
   /**
@@ -109,28 +109,28 @@ Page({
       title: '提示',
       content: '确定删除这条记录吗？',
       success: function(res) {
-        if (res.confirm) {
-          postParamsRequest("/trend/remove",{trendId:that.data.trend.trendId})
-          .then((value) =>{
-            const {code,msg}= value;
-            if(code == 200 ){
-              wx.showToast({
-                title: msg,
-              })  
-              wx.navigateBack({
-                delta: 1
-              });
-            }else{
-              wx.showToast({
-                title: msg,
-                icon:'error'
-              })
-            }
+        // if (res.confirm) {
+        //   postParamsRequest("/trend/remove",{trendId:that.data.trend.trendId})
+        //   .then((value) =>{
+        //     const {code,msg}= value;
+        //     if(code == 200 ){
+        //       wx.showToast({
+        //         title: msg,
+        //       })  
+        //       wx.navigateBack({
+        //         delta: 1
+        //       });
+        //     }else{
+        //       wx.showToast({
+        //         title: msg,
+        //         icon:'error'
+        //       })
+        //     }
             
-          })
-        } else if (res.cancel) {
-          return false;
-        }
+        //   })
+        // } else if (res.cancel) {
+        //   return false;
+        // }
       }
     })
   },
@@ -251,33 +251,33 @@ Page({
         'discuss.trendId':trend.trendId,
       })
     }
-    var baby = wx.getStorageSync('baby');
-    postRequest("/discuss/save",
-    {
-      discuss:this.data.discuss,
-      babyId:baby.babyId
-    })
-    .then((value) =>{
-      const {code,data,msg} = value;
-      if(code == 200){
-        var trend = this.data.trend;
-        trend.discusses.push(data);
-        this.setData({
-          trend:trend,
-          'discuss.content':''
-        })
-        this.setData({
-          showEmoji:false,
-          keywordHeight:0
-        })
+    // var baby = wx.getStorageSync('baby');
+    // postRequest("/discuss/save",
+    // {
+    //   discuss:this.data.discuss,
+    //   babyId:baby.babyId
+    // })
+    // .then((value) =>{
+    //   const {code,data,msg} = value;
+    //   if(code == 200){
+    //     var trend = this.data.trend;
+    //     trend.discusses.push(data);
+    //     this.setData({
+    //       trend:trend,
+    //       'discuss.content':''
+    //     })
+    //     this.setData({
+    //       showEmoji:false,
+    //       keywordHeight:0
+    //     })
         
-      }else{
-        wx.showToast({
-          title: msg,
-          icon:'error'
-        })
-      }
-    })
+    //   }else{
+    //     wx.showToast({
+    //       title: msg,
+    //       icon:'error'
+    //     })
+    //   }
+    // })
   },
 
 
@@ -346,37 +346,37 @@ Page({
       })
     }
     if(this.data.trendId != null){
-      postParamsRequest("/trend/gettrendByIndex",{trendId:this.data.trendId})
-      .then((value) =>{
-        const {data} = value;
-        var baby = wx.getStorageSync('baby');
-        if(baby != null && baby.babyBirth != null){//获取宝宝年龄
-          data.age = getAge(baby.babyBirth,data.uploadTime);
-        }else{
-          data.age = '';
-        }
-         //对图片做处理
-         if(data.trendPhoto != null){
-          var images = data.trendPhoto;
-          var imgs = images.split(",");
-          data.images = imgs; 
-          data.height = 300 * wx.getWindowInfo().pixelRatio;;
-          data.width = '100%';
-        }
-         //对视频做处理
-         if(data.trendVideo != null){
-          var images = data.trendVideo;
-          var imgs = images.split(",");
-          data.trendVideo = imgs[0];
-          data.coverImage = imgs[1];
-          data.height = 300 * wx.getWindowInfo().pixelRatio;;
-          data.width = '100%';
-        }
-        this.setData({
-          trend:data,
-          tags:data.tags
-        })
-      })
+      // postParamsRequest("/trend/gettrendByIndex",{trendId:this.data.trendId})
+      // .then((value) =>{
+      //   const {data} = value;
+      //   var baby = wx.getStorageSync('baby');
+      //   if(baby != null && baby.babyBirth != null){//获取宝宝年龄
+      //     data.age = getAge(baby.babyBirth,data.uploadTime);
+      //   }else{
+      //     data.age = '';
+      //   }
+      //    //对图片做处理
+      //    if(data.trendPhoto != null){
+      //     var images = data.trendPhoto;
+      //     var imgs = images.split(",");
+      //     data.images = imgs; 
+      //     data.height = 300 * wx.getWindowInfo().pixelRatio;;
+      //     data.width = '100%';
+      //   }
+      //    //对视频做处理
+      //    if(data.trendVideo != null){
+      //     var images = data.trendVideo;
+      //     var imgs = images.split(",");
+      //     data.trendVideo = imgs[0];
+      //     data.coverImage = imgs[1];
+      //     data.height = 300 * wx.getWindowInfo().pixelRatio;;
+      //     data.width = '100%';
+      //   }
+      //   this.setData({
+      //     trend:data,
+      //     tags:data.tags
+      //   })
+      // })
     }
 
   },

@@ -1,37 +1,40 @@
 <!--pages/main/components/component-input/index.wxml-->
-<view class="reply_wrp" style="bottom: {{isIOS ? keywordHeight + safeHeight : keywordHeight}}rpx">
-      <view class="reply_tool">
-        <view class="reply_form_wrp">
-          <label for="" class="reply_label">
-            <input 
-              class="reply_input" 
-              cursor-spacing="8rpx" 
-              confirm-type="send" 
-              adjust-position="{{false}}" 
-              confirm-hold value="{{comment.content}}" 
-              cursor="{{cursor}}" 
-              focus="{{inputFocus}}" 
-              bindblur="onBlur" 
-              bind:focus="onFocus" 
-              bindinput="onInput" 
-              bindconfirm="onConfirm" 
-              bind:keyboardheightchange="onkeyboardHeightChange"
-            />
-          </label>
-        </view>
-        <view hover-class="active" class="reply_button replay_emotion_button" bindtap="handleShowEmojiPanel">
-          <image src="{{theme === 'dark' ? './images/reply_tool_emoji_dark.svg' : './images/reply_tool_emoji.svg'}}" mode='aspectFit' class="reply_tool_pic"></image>
-        </view>
-       
-        <button size="mini" type="{{comment.content.length ? 'primary' :'default'}}" bind:tap="handleSend">发送</button>
-        
+<view class="reply_wrap">
+  <view class="reply_mask" bind:tap="handleMask"></view>
+  <view class="reply_content" style="bottom: {{isIOS ? keywordHeight + safeHeight : keywordHeight}}rpx">
+    <view class="reply_tool">
+      <view class="reply_form_wrp">
+        <label for="" class="reply_label">
+          <input 
+            class="reply_input" 
+            cursor-spacing="8rpx" 
+            confirm-type="send" 
+            adjust-position="{{false}}" 
+            confirm-hold value="{{comment.content}}" 
+            cursor="{{cursor}}" 
+            focus="{{inputFocus}}" 
+            bindblur="onBlur" 
+            bind:focus="onFocus" 
+            bindinput="onInput" 
+            bindconfirm="onConfirm" 
+            bind:keyboardheightchange="onkeyboardHeightChange"
+          />
+        </label>
       </view>
-      <!-- 表情包 -->
-      <view class="emoji" wx:if="{{showEmojiPanel}}" style="position: relative;z-index:1000;">
-          <!-- 点击非表情包界面可隐藏 -->
-          <view class="emoji_screen" bindtap="hideEmoji"></view>
-          <emoji bind:emojiEvent="clickChooseEmoji" height="{{keywordHeight}}"></emoji>
-          
+      <view hover-class="active" class="reply_button replay_emotion_button" bindtap="handleShowEmojiPanel">
+        <image src="{{theme === 'dark' ? './images/reply_tool_emoji_dark.svg' : './images/reply_tool_emoji.svg'}}" mode='aspectFit' class="reply_tool_pic"></image>
       </view>
-     
+      
+      <button size="mini" type="{{comment.content.length ? 'primary' :'default'}}" bind:tap="handleSend">发送</button>
+      
     </view>
+    <!-- 表情包 -->
+    <view class="emoji" wx:if="{{showEmojiPanel}}" style="position: relative;z-index:1000;">
+        <!-- 点击非表情包界面可隐藏 -->
+        <view class="emoji_screen" bindtap="hideEmoji"></view>
+        <emoji bind:emojiEvent="clickChooseEmoji" height="{{keywordHeight}}"></emoji>
+        
+    </view>
+    
+  </view>
+</view>

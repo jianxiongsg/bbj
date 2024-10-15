@@ -31,14 +31,12 @@ Component({
      * 组件的方法列表
      */
     methods: {
-      handleComment:function(){
-        console.log('111111111');
+      handleComment(){
         this.setData({
           showInput:true
         })
       },
-      onSend:function(data){
-        console.log('.............data',data);
+      onSend(data){
         const commentInfo = {
               id:this.data.commentList.length +1,
               nick:"妈妈",
@@ -52,6 +50,11 @@ Component({
         this.setData({
           showInput:false,
           commentList:this.data.commentList.concat([commentInfo])
+        })
+      },
+      hideInput(){
+        this.setData({
+          showInput:false
         })
       }
     }

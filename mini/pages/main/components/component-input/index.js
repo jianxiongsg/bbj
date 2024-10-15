@@ -65,7 +65,7 @@ Component({
         this.triggerEvent("commentEvent",content);
       },
       /** 显示表情包 */
-      clickChooseEmoji:function(data){
+      clickChooseEmoji(data){
         const emoji = data.detail;
         const cont = this.data.comment.content;//评论内容
         const cursor = this.data.cursor;//光标位置
@@ -85,7 +85,7 @@ Component({
         })
       },
 
-      handleShowEmojiPanel:function(){
+      handleShowEmojiPanel(){
         var window = wx.getWindowInfo();
         //表情包的高度
         var height = window.windowHeight - window.safeArea.top;
@@ -103,6 +103,9 @@ Component({
             showEmojiPanel: true,
           })
         }
+      },
+      handleMask(){
+        this.triggerEvent('hideInput')
       }
       
     }
