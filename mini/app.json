@@ -10,7 +10,8 @@
         "pages/minedata/index",
         "pages/main/index",
         "pages/comment/index",
-        "pages/trends/index"
+        "pages/trends/index",
+        "pages/addBaby/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -47,8 +48,8 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-                "pagePath": "pages/comment/index",
-                "text": "评论",
+                "pagePath": "pages/addBaby/index",
+                "text": "新宝宝",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
             }
