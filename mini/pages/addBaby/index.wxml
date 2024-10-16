@@ -13,15 +13,15 @@
         生日
       </view>
       <picker mode="date" class="section_picker" bindchange="bindDateChange" value="{{birth}}">
-      <view class="picker_birth" wx:if="{{birth === null}}">
-        <text style="margin-left:40rpx;">请选择宝宝的生日</text>
-        <text class="delimiter">></text>
-      </view>
-      <view class="picker_birth" wx:else>
-        <text style="margin-left:40rpx;">{{birth}}</text>
-        <text class="delimiter">></text>
-      </view>
-    </picker>
+        <view class="picker_birth" wx:if="{{birth === null}}">
+          <text style="margin-left:40rpx;">请选择宝宝的生日</text>
+          <text class="delimiter">></text>
+        </view>
+        <view class="picker_birth" wx:else>
+          <text style="margin-left:40rpx;">{{birth}}</text>
+          <text class="delimiter">></text>
+        </view>
+      </picker>
 
     </view>
 

@@ -29,23 +29,23 @@ Page({
    * 宝宝性别
    * @param {*} options 
    */
-  sexSwitch:function(options){
-    let that = this;
+  sexSwitch(options){
+    
     // 按钮索引
-    var index = options.currentTarget.dataset.index;
-    var list = that.data.sexList;
-    for(var i=0;i<list.length;i++){
+    const index = options.currentTarget.dataset.index;
+    const list = this.data.sexList;
+    for(let i=0;i<list.length;i++){
       if(i !== index){
         list[i].checked = false;
       }else{
         list[i].checked = true;
-        that.setData({
+        this.setData({
           'baby.babySex':list[i].sex
         })
       }
     }
     // 更新
-    that.setData({
+    this.setData({
       sexList: list
     });
   },
@@ -83,16 +83,10 @@ Page({
       if(i !== index){
         list[i].checked = false;
       }else{
-        if(i == 2){
-          wx.navigateTo({
-            url: '../relative-temp/temp?index='+i,
-          })
-        }else{
-          list[i].checked = true;
-          that.setData({
-            'identity.identity':list[i].relative
-          })
-        }
+        list[i].checked = true;
+        that.setData({
+          'identity.identity':list[i].relative
+        })
       }
     }
     // 更新
