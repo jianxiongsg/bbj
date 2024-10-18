@@ -68,11 +68,6 @@ Page({
                     icon: 'success',
                     duration: 2000
                 })
-                setTimeout(() => {
-                    wx.reLaunch({
-                        url: '/pages/mydream/index',
-                    })
-                }, 500)
             }
         } catch (error) {
             wx.showToast({
@@ -97,11 +92,6 @@ Page({
             })
             if (res.success == true) {
                 that.offtips();
-                setTimeout(() => {
-                    wx.reLaunch({
-                        url: '/pages/mydream/index',
-                    })
-                }, 500)
             }
             wx.showToast({
                 title: '删除成功',
@@ -134,9 +124,6 @@ Page({
                             share: this.data.switchvalue,
                         }]
                     }
-                })
-                wx.reLaunch({
-                    url: '/pages/mydream/index',
                 })
             } catch (error) {
                 wx.showToast({

@@ -26,9 +26,9 @@ Page({
             show:false
         })
         if (options.openid == this.data.myopenid) {
-            wx.reLaunch({
-                url: '../mydream/index',
-            })  
+            // wx.reLaunch({
+            //     url: '../mydream/index',
+            // })  
             return;
         }
         const res = await app.call({
@@ -38,9 +38,9 @@ Page({
             }
         })
         if (res.data) {
-            wx.reLaunch({
-                url: '../mydream/index',
-            })
+            // wx.reLaunch({
+            //     url: '../mydream/index',
+            // })
         }else{
             this.setData({
                 show:true
