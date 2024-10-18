@@ -102,13 +102,13 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    let user = wx.getStorageSync('user');
-    let openid = wx.getStorageSync('userOpenid')
-    console.log(`pages/shareappmessage/index?openid=${openid}&name=${user.nickName}&img=${user.avatarUrl}`)
-    return {
-      title: `${user.nickName}邀请你来实现愿望清单`,
-      path: `pages/shareappmessage/index?openid=${openid}&name=${user.nickName}&img=${user.avatarUrl}`,
-      imageUrl: "../../image/398f0452-72bd-4928-a1f3-b64ce425f2a9.png"
-    }
+    // let user = wx.getStorageSync('user');
+    // let openid = wx.getStorageSync('userOpenid')
+    // console.log(`pages/shareappmessage/index?openid=${openid}&name=${user.nickName}&img=${user.avatarUrl}`)
+    // return {
+    //   title: `${user.nickName}邀请你来实现愿望清单`,
+    //   path: `pages/shareappmessage/index?openid=${openid}&name=${user.nickName}&img=${user.avatarUrl}`,
+    //   imageUrl: "../../image/398f0452-72bd-4928-a1f3-b64ce425f2a9.png"
+    // }
   },
 })

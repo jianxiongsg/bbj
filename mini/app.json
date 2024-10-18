@@ -5,11 +5,7 @@
         "pages/mydream/index",
         "pages/adddream/index",
         "pages/tadream/index",
-        "pages/shareappmessage/index",
         "pages/modification/index",
-        "pages/Completed/index",
-        "pages/minedata/index",
-        "pages/comment/index",
         "pages/trends/index",
         "pages/addBaby/index"
     ],
@@ -34,12 +30,6 @@
                 "text": "我的愿望",
                 "iconPath": "image/04.png",
                 "selectedIconPath": "image/044.png"
-            },
-            {
-                "pagePath": "pages/minedata/index",
-                "text": "我的",
-                "iconPath": "image/06.png",
-                "selectedIconPath": "image/066.png"
             },
             {
                 "pagePath": "pages/main/index",

@@ -58,9 +58,7 @@ Page({
             memorialDayNoticeTime:that.data.remind, // 纪念日提醒
         },
       })
-      wx.reLaunch({
-        url: '/pages/minedata/index',
-      })
+
     },
     inputvalue(e) {
       this.setData({
