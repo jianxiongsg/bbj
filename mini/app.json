@@ -1,14 +1,14 @@
 {
     "pages": [
+        "pages/login/index",
+        "pages/main/index",
         "pages/mydream/index",
         "pages/adddream/index",
         "pages/tadream/index",
         "pages/shareappmessage/index",
         "pages/modification/index",
-        "pages/login/index",
         "pages/Completed/index",
         "pages/minedata/index",
-        "pages/main/index",
         "pages/comment/index",
         "pages/trends/index",
         "pages/addBaby/index"
@@ -24,8 +24,8 @@
         "selectedColor": "#FF514E",
         "list": [
             {
-                "pagePath": "pages/tadream/index",
-                "text": "Ta的愿望",
+                "pagePath": "pages/login/index",
+                "text": "登录",
                 "iconPath": "image/02.png",
                 "selectedIconPath": "image/022.png"
             },
