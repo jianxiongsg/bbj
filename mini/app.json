@@ -6,7 +6,8 @@
         "pages/tadream/index",
         "pages/modification/index",
         "pages/trends/index",
-        "pages/addBaby/index"
+        "pages/addBaby/index",
+        "pages/addGrownUpRecord/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -35,6 +36,12 @@
                 "text": "新宝宝",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
+            },
+            {
+              "pagePath": "pages/addGrownUpRecord/index",
+              "text": "添加成长记录",
+              "iconPath": "image/06.png",
+              "selectedIconPath": "image/066.png"
             }
         ]
     },
