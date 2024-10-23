@@ -7,7 +7,8 @@
         "pages/modification/index",
         "pages/trends/index",
         "pages/addBaby/index",
-        "pages/addGrownUpRecord/index"
+        "pages/addGrownUpRecord/index",
+        "pages/grownUpRecord/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -38,8 +39,14 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-              "pagePath": "pages/addGrownUpRecord/index",
-              "text": "添加成长记录",
+                "pagePath": "pages/addGrownUpRecord/index",
+                "text": "添加成长记录",
+                "iconPath": "image/06.png",
+                "selectedIconPath": "image/066.png"
+            },
+            {
+              "pagePath": "pages/grownUpRecord/index",
+              "text": "成长记录",
               "iconPath": "image/06.png",
               "selectedIconPath": "image/066.png"
             }
