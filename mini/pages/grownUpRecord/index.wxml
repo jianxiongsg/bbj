@@ -4,10 +4,10 @@
   <view class="record">
     <!-- 添加记录 -->
     <view  class="add">
-      <navigator hover-class="none" url="../addrecord/addrecord?babyId={{babyId}}">
-      <!-- <image src="../record/image/add.png"></image> -->
-      <view>添加</view>
-    </navigator>
+      <navigator hover-class="none" url="../addGrownUpRecord/addGrownUpRecord?babyId={{babyId}}">
+        <image src="https://gw.alicdn.com/imgextra/i3/O1CN01IpSUXo1ybwF5gjQ37_!!6000000006598-2-tps-48-48.png"></image>
+        <view>添加</view>
+      </navigator>
     </view>
 
     <!-- 身高曲线 -->
