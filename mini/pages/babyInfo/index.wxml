@@ -11,7 +11,7 @@
   <view class="head"  bindtap="upload">
     <image wx:if="{{baby.babyPhoto == null}}" src="https://gw.alicdn.com/imgextra/i1/O1CN01YsL0061cGU8lIXMqw_!!6000000003573-2-tps-768-768.png"></image>
     <image wx:else src="{{baby.babyPhoto}}"></image>
-    <text>{{age || 5个月}}</text>
+    <text>{{age}}</text>
   </view>
 
   <!-- 编辑信息 -->
@@ -20,7 +20,7 @@
     <view class="detail">
       <view>
         <text>小名</text>
-        <input type="text" value="{{baby.nickname || "简红玫"}}" placeholder="请输入" bindinput="nicknameInput" />
+        <input type="text" value="{{baby.nickname}}" placeholder="请输入" bindinput="nicknameInput" />
         <text class="delimiter">></text>
       </view>
     </view>

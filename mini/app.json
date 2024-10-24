@@ -9,7 +9,8 @@
         "pages/addBaby/index",
         "pages/addGrownUpRecord/index",
         "pages/grownUpRecord/index",
-        "pages/babyInfo/index"
+        "pages/babyInfo/index",
+        "pages/signIn/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -28,8 +29,8 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-                "pagePath": "pages/addBaby/index",
-                "text": "新宝宝",
+                "pagePath": "pages/signIn/index",
+                "text": "签到",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
             },
@@ -46,11 +47,11 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-              "pagePath": "pages/babyInfo/index",
-              "text": "宝宝信息",
-              "iconPath": "image/06.png",
-              "selectedIconPath": "image/066.png"
-          }
+                "pagePath": "pages/babyInfo/index",
+                "text": "宝宝信息",
+                "iconPath": "image/06.png",
+                "selectedIconPath": "image/066.png"
+            }
         ]
     },
     "style": "v2",
