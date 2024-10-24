@@ -8,7 +8,8 @@
         "pages/trends/index",
         "pages/addBaby/index",
         "pages/addGrownUpRecord/index",
-        "pages/grownUpRecord/index"
+        "pages/grownUpRecord/index",
+        "pages/babyInfo/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -20,12 +21,6 @@
         "color": "#1485EE",
         "selectedColor": "#FF514E",
         "list": [
-            {
-                "pagePath": "pages/login/index",
-                "text": "登录",
-                "iconPath": "image/02.png",
-                "selectedIconPath": "image/022.png"
-            },
             {
                 "pagePath": "pages/main/index",
                 "text": "宝宝",
@@ -45,11 +40,17 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-              "pagePath": "pages/grownUpRecord/index",
-              "text": "成长记录",
+                "pagePath": "pages/grownUpRecord/index",
+                "text": "成长记录",
+                "iconPath": "image/06.png",
+                "selectedIconPath": "image/066.png"
+            },
+            {
+              "pagePath": "pages/babyInfo/index",
+              "text": "宝宝信息",
               "iconPath": "image/06.png",
               "selectedIconPath": "image/066.png"
-            }
+          }
         ]
     },
     "style": "v2",
