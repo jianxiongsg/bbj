@@ -10,7 +10,8 @@
         "pages/addGrownUpRecord/index",
         "pages/grownUpRecord/index",
         "pages/babyInfo/index",
-        "pages/signIn/index"
+        "pages/signIn/index",
+        "pages/album/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
