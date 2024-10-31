@@ -1,0 +1,64 @@
+/* pages/albumPhotos/index.wxss */
+.photos_title{
+  position: relative;
+  width: 100vw;
+  height: auto;
+  font-size: 42rpx;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+.photos_subtitle{
+  position: relative;
+  width: 100vw;
+  height: auto;
+  font-size: 24rpx;
+  color: #999999;
+  text-align: center;
+  margin-top: 12rpx;
+}
+.photos_content{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+  padding-bottom: 40rpx;
+}
+.photos_area{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 20rpx;
+}
+.photos_area_date{
+  position: relative;
+  color: #000000;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+
+.photos_area_body{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.photos_item{
+  position: relative;
+  width: 230rpx;
+  height: 230rpx;
+  overflow: hidden;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.photos_item_image{
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}

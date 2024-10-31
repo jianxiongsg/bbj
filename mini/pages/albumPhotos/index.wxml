@@ -1,0 +1,53 @@
+<!--pages/albumPhotos/index.wxml-->
+<view>
+  <view class="photos_title">相册名字</view>
+  <view class="photos_subtitle">私密 · 50张照片</view>
+  <view class="photos_content">
+    <view class="photos_area">
+      <view class="photos_area_date">2024/5/26</view>
+      <view class="photos_area_body">
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+      </view>
+    </view>
+    <view class="photos_area">
+      <view class="photos_area_date">2024/5/26</view>
+      <view class="photos_area_body">
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+        <view class="photos_item">
+          <image class="photos_item_image" mode="scaleToFill" src="https://gw.alicdn.com/imgextra/i1/O1CN01yUISUx1k00oyY6rA0_!!6000000004620-0-tps-750-500.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

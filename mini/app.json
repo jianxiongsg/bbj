@@ -11,7 +11,8 @@
         "pages/grownUpRecord/index",
         "pages/babyInfo/index",
         "pages/signIn/index",
-        "pages/album/index"
+        "pages/album/index",
+        "pages/albumPhotos/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -48,8 +49,8 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-                "pagePath": "pages/album/index",
-                "text": "相册",
+                "pagePath": "pages/albumPhotos/index",
+                "text": "相册照片",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
             }
