@@ -48,8 +48,8 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-                "pagePath": "pages/babyInfo/index",
-                "text": "宝宝信息",
+                "pagePath": "pages/album/index",
+                "text": "相册",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
             }

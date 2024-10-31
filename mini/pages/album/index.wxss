@@ -1,39 +1,58 @@
-/* pages/album/index.wxss */
-.album-image{
-  width: 210rpx;
-  height: 372rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+
+.album_wraper{
   position: relative;
-}
-
-.album-image-main{
-  width: 210rpx;
-  position: absolute;
-  z-index: 100;
-}
-
-.album-image-base{
   width: 100%;
-  height: 100%;
-  filter: blur(5px);
-  opacity: 0.2;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 2rpx;
+  box-sizing: border-box;
 }
-
-.default-cover{
-  width: 150rpx;
+.album_item_add{
+  background-color: #f4f4f4;
 }
-
-.album-text{
-  width: 210rpx;
+.album_item{
+  position: relative;
+  width: 340rpx;
+  height: auto;
+  border-radius: 12rpx;
+  margin: 22rpx 0rpx 0rpx 22rpx;
 }
-
-.bg-image{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.2;
+.add_album_face{
+  min-width: 100%;
+  min-height: 100%;
+}
+.add_album_icon{
+  width: 72rpx;
+  height: 64rpx;
+}
+.album_item_con{
+  position: relative;
+  width: 340rpx;
+  height: 340rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12rpx;
+}
+.add_album_text{
+  color: #9aa1b3;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.album_item_name{
+  font-size: 32rpx;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 12rpx;
+  white-space: nowrap;
+}
+.album_item_num{
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 12rpx;
+  white-space: nowrap;
 }
