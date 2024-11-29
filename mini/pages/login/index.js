@@ -15,65 +15,84 @@ Page({
    * 登录
    */
   login:function(){
-     //获取微信用户信息
-     wx.getUserProfile({
-      desc: '展示用户信息',
+    wx.login({
       success: (res) => {
-        this.setData({
-          username: res.userInfo.nickName,
-          userPhoto: res.userInfo.avatarUrl,
-        });
-         // 微信登录
-        wx.login({
-          success: (res) => {
-            //后端请求接口
-            // postParamsRequest('/user/minilogin',
-            //   {username:this.data.username,
-            //   userPhoto:this.data.userPhoto,
-            //   code:res.code//微信登录唯一标识码
-            // }).then((value) =>{
-              // const {code,data,msg} = value;
-              // if(code === 200){
-                // let token = data.token;
-                // let user = data.user;
-                // let info = data.wechatInfo;
-                //将token、openid、user存入storage中，并设置一个月的过期时间
-                // wx.setStorageSync('token', token,1000 * 60 * 60 * 24*30);
-                // wx.setStorageSync('openid', info.openid,1000 * 60 * 60 * 24*30);
-                // wx.setStorageSync('user', user,1000 * 60 * 60 * 24*30);
-                wx.switchTab({
-                  url: '../main/index',
-                  success: function(e) {
-                    var page = getCurrentPages().pop();
-                    if (page == undefined || page == null) {
-                      return;
+        const code = res.code;
+        wx.getSetting({
+          success:(setting)=>{
+            if(!setting.authSetting['scope.userInfo']){
+              wx.authorize({
+                scope: 'scope.userInfo',
+                success:()=>{
+                  wx.getUserProfile({
+                    desc: '展示用户信息',
+                    success: (res) => {
+                      this.setData({
+                        username: res.userInfo.nickName,
+                        userPhoto: res.userInfo.avatarUrl,
+                      });
+                      this.goMain();
+                    },
+                    fail: (err) => {
+                      console.log("getUserProfile fail",err)
+                      wx.showToast({
+                        title: '您已拒绝授权，请重新点击并授权',
+                        icon:'none'
+                      })
                     }
-                    page.onLoad();//刷新页面
-                  }
-                })
-              // }else{
-              //   wx.showToast({
-              //     title: msg,
-              //     icon:'error'
-              //   })
-              // }
-             
-            // })
+                  })
+                },
+                fail:(error)=>{
+                  console.log("authorize fail",error)
+                }
+              })
+            }else{
+              //获取微信用户信息
+              wx.getUserProfile({
+                desc: '展示用户信息',
+                success: (res) => {
+                  this.setData({
+                    username: res.userInfo.nickName,
+                    userPhoto: res.userInfo.avatarUrl,
+                  });
+                  this.goMain();
+                },
+                fail: (err) => {
+                  console.log("getUserProfile fail",err)
+                  this.goMain();
+                  wx.showToast({
+                    title: '您已拒绝授权，请重新点击并授权',
+                    icon:'none'
+                  })
+                }
+              })
+            }
           },
+          fail:(error)=>{
+            console.log('getSetting fail',error)
+          }
         })
       },
-      fail: (err) => {
-        wx.showToast({
-          title: '您已拒绝授权，请重新点击并授权',
-          icon:'none'
-        })
+      fail:(error)=>{
+        //TODO 测试
+        this.goMain();
+        console.log('login fail',error)
       }
-    })
-
-
-      
+    }) 
   },
 
+  goMain(){
+    wx.switchTab({
+      url: '../main/index',
+      success: function(e) {
+        var page = getCurrentPages().pop();
+        if (page == undefined || page == null) {
+          return;
+        }
+        page.onLoad();//刷新页面
+      }
+    })
+  },
   
 
 

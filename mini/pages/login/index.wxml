@@ -7,15 +7,5 @@
   </view>
   <!-- 登录按钮 -->
   <button type="primary" class="loginBtn" bindtap="login"
-  style="background-color: #ff9933;width:86%;margin-top:40rpx;">登录</button>
-
-
-
-  <!-- 注册导航 -->
-  <!-- <view class="register">
-    <view>
-      <navigator open-type="navigate" url="../phoneLogin/phoneLogin">手机号登录</navigator>
-    </view>
-
-  </view> -->
+  style="background-color: #87da48;width:86%;margin-top:40rpx;">登录</button>
 </view>

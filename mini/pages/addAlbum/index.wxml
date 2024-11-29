@@ -1,0 +1,33 @@
+<!--pages/addAlbum/index.wxml-->
+<view class="addAlbum_wraper">
+  <view class="addAlbum_name">
+    <input 
+      type="text"
+      class="name_input"
+      placeholder-style="color:#999999"
+      maxlength="10"
+      cursor-spacing="8rpx" 
+      confirm-type="done" 
+      adjust-position="{{false}}" 
+      placeholder="请输入相册名称"
+      value=""
+      bindconfirm="onInput"
+    />
+  </view>
+  <view class="addAlbum_theme">
+    <view class="addAlbum_top">
+      <view class="addAlbum_tl">主题</view>
+      <view class="addAlbum_tr">
+        <view class="addAlbum_tn">普通相册</view>
+        <image class="addAlbum_ta" src="https://gw.alicdn.com/imgextra/i2/O1CN01S4FnKc1hM32NcfP4l_!!6000000004262-2-tps-64-64.png"></image>
+      </view>
+    </view>
+    <view class="addAlbum_tags">
+      <view bind:tap="onSelectAlbumTag" class="tag_item" wx:for="{{albumTags}}" wx:key="index" data-index="{{index}}" wx:for-item="v">
+        <view class="tag_icon" style="background-image: url({{v.icon}});background-position-x: {{v.checked ? '65rpx':'0rpx'}};"></view>
+        <view class="tag_name {{v.checked && 'select_name'}}">{{v.val}}</view>
+      </view>
+    </view>
+    <view class="addAlbum_btn">完成创建</view>
+  </view>
+</view>

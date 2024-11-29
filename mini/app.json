@@ -12,12 +12,14 @@
         "pages/babyInfo/index",
         "pages/signIn/index",
         "pages/album/index",
-        "pages/albumPhotos/index"
+        "pages/albumPhotos/index",
+        "pages/addAlbum/index",
+        "pages/addLog/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#f4f4f4",
-        "navigationBarTitleText": "愿望清单",
+        "navigationBarTitleText": "宝宝",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
@@ -43,8 +45,8 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-                "pagePath": "pages/grownUpRecord/index",
-                "text": "成长记录",
+                "pagePath": "pages/addAlbum/index",
+                "text": "添加相册",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
             },

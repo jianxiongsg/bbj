@@ -1,0 +1,125 @@
+/* pages/addLog/index.wxss */
+.addLog_wrap{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.addLog_nav{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.addLog_cancel{
+  font-size: 30rpx;
+  color: #000000;
+}
+.addLog_save{
+  width: 100rpx;
+  height: 54rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  border-radius: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #febf2b;
+}
+.addLog_content{
+  width: 100%;
+  padding-left: 60rpx;
+  box-sizing: border-box;
+}
+.input_wrap{
+  margin-top:30rpx;
+}
+
+.photo_list{
+  position: relative;
+  width: 600rpx;
+  padding-left: -10rpx;
+  box-sizing: border-box;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.photo_item{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.photo_image{
+  width: 100%;
+  height: 100%;
+}
+.tag_list{
+  position: relative;
+  margin-top: 80rpx;
+  margin-left: -22rpx;
+  margin-bottom: 40rpx;
+}
+.tag_item{
+  display: inline-block;
+  height: 60rpx;
+  width: auto;
+  padding: 2rpx 30rpx;
+  border-radius: 30rpx;
+  background-color: #f4f4f4;
+  line-height: 50rpx;
+  margin-left: 22rpx;
+}
+.tag_add{
+  font-size: 46rpx;
+  margin-right: 2rpx;
+}
+.tag_title{
+  font-size: 30rpx;
+  flex: 0 0 auto;
+}
+.add_line{
+   width: 630rpx;
+   height: 1px;
+   background-color: #000000;
+   opacity: 0.2;
+}
+.log_item{
+  position: relative;
+  width: 630rpx;
+  height: 110rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.log_item_icon{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+.log_go{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.item_left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item_right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item_text{
+  color: #000000;
+  font-size: 30rpx;
+}

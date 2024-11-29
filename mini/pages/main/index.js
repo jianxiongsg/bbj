@@ -65,6 +65,13 @@ Page({
     this.init();
   },
 
+  /** 添加日志 */
+  addLog(){
+    wx.navigateTo({
+      url: '/pages/addLog/index',
+    })
+  },
+
   /**
    * 页面上拉触底事件的处理函数
    */

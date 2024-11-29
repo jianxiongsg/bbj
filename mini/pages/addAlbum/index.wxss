@@ -1,0 +1,123 @@
+/* pages/addAlbum/index.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.addAlbum_wraper{
+  position: relative;
+  width: 100%;
+}
+.addAlbum_name{
+  width: 100%;
+  height: 150rpx;
+  background-color: #ffffff;
+}
+.name_input{
+  width: 100%;
+  height: 100%;
+  font-size: 46rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  caret-color: #000000;
+  border-bottom: #eeeeee solid 1px;
+}
+.addAlbum_theme{
+  position: relative;
+  width: 100%;
+  height: 320rpx;
+  margin-top: 8rpx;
+  background-color: #ffffff;
+}
+.addAlbum_top{
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.addAlbum_tl{
+  color: #000000;
+  font-size: 36rpx;
+}
+.addAlbum_tr{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.addAlbum_tn{
+  color: #888888;
+  font-size: 32rpx;
+}
+.addAlbum_ta{
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 6rpx;
+}
+
+.addAlbum_tags{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 70rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+/* 对于 Webkit 浏览器（如 Chrome 和 Safari） */
+.addAlbum_tags::-webkit-scrollbar {
+  display: none; /* 隐藏滚动条 */
+}
+.tag_item{
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 30rpx;
+}
+.tag_icon{
+  position: absolute;
+  left: 50%;
+  bottom: 50rpx;
+  width: 64rpx;
+  height: 64rpx;
+  transform: translateX(-50%);
+  background-size: 130rpx 64rpx;
+  overflow: hidden;
+  background-position: 0 0;
+}
+
+.tag_name{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #888888;
+  font-size: 28rpx;
+  white-space: nowrap;
+  text-align: center;
+}
+.select_name{
+  color: #1296db;
+}
+.addAlbum_btn{
+  position: relative;
+  width: 702rpx;
+  height: 90rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-radius: 12rpx;
+  background-color: #04cbfe;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+  margin-left: 24rpx;
+}

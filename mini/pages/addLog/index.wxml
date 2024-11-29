@@ -1,0 +1,48 @@
+<!--pages/addLog/index.wxml-->
+<view class="addLog_wrap">
+  <view class="addLog_nav">
+    <view class="addLog_cancel">取消</view>
+    <view class="addLog_save">保存</view>
+  </view>
+  <view class="addLog_content">
+    <textarea class="input_wrap" name="content" placeholder-class="phc" placeholder="说说你现在的想法吧！" style="min-height:40rpx;height: auto;"
+					model:value="{{formContent}}" maxlength="50000" focus="{{formContentFocus}}"
+					auto-height="true">
+    </textarea>
+    <view class="photo_list">
+      <view class="photo_item"><image class="photo_image" src="https://gw.alicdn.com/imgextra/i1/O1CN01DX7kXY1wY9km71YOO_!!6000000006319-0-tps-150-150.jpg"></image></view>
+      <view class="photo_item"><image class="photo_image" src="https://gw.alicdn.com/imgextra/i1/O1CN01DX7kXY1wY9km71YOO_!!6000000006319-0-tps-150-150.jpg"></image></view>
+      <view class="photo_item"><image class="photo_image" src="https://gw.alicdn.com/imgextra/i1/O1CN01DX7kXY1wY9km71YOO_!!6000000006319-0-tps-150-150.jpg"></image></view>
+      <view class="photo_item"><image class="photo_image" src="https://gw.alicdn.com/imgextra/i1/O1CN01DX7kXY1wY9km71YOO_!!6000000006319-0-tps-150-150.jpg"></image></view>
+
+      <view class="photo_item"><image class="photo_image" src="https://gw.alicdn.com/imgextra/i1/O1CN01DX7kXY1wY9km71YOO_!!6000000006319-0-tps-150-150.jpg"></image></view>
+    </view>
+    <view class="tag_list">
+      <view class="tag_item"><text class="tag_add">+</text><text class="tag_title">第一次</text></view>
+      <view class="tag_item"><text class="tag_add">+</text><text class="tag_title">标签</text></view>
+    </view>
+    <view class="add_line"></view>
+    <view class="log_item">
+      <view class="item_left">
+        <image class="log_item_icon" src="https://gw.alicdn.com/imgextra/i1/O1CN015RNd8X1x633yC1vVf_!!6000000006393-2-tps-64-64.png"></image>
+        <view class="item_text">所在位置</view>
+      </view>
+      <view class="item_right">
+        <view class="item_text">四川省-成都市-新都区</view>
+        <image class="log_go" src="https://gw.alicdn.com/imgextra/i4/O1CN01Q72Xjd1JsWLifxFS1_!!6000000001084-2-tps-64-64.png"></image>
+      </view>
+    </view>
+    <view class="add_line"></view>
+    <view class="log_item">
+      <view class="item_left">
+        <image class="log_item_icon" src="https://gw.alicdn.com/imgextra/i1/O1CN01EfrREF1gxJew8ozH7_!!6000000004208-2-tps-64-64.png"></image>
+        <view class="item_text">记录时间</view>
+      </view>
+      <view class="item_right">
+        <view class="item_text">2024-11-03</view>
+        <image class="log_go" src="https://gw.alicdn.com/imgextra/i4/O1CN01Q72Xjd1JsWLifxFS1_!!6000000001084-2-tps-64-64.png"></image>
+      </view>
+    </view>
+    <view class="add_line"></view>
+  </view>
+</view>
