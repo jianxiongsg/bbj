@@ -14,7 +14,8 @@
         "pages/album/index",
         "pages/albumPhotos/index",
         "pages/addAlbum/index",
-        "pages/addLog/index"
+        "pages/addLog/index",
+        "pages/addTag/index"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -51,8 +52,8 @@
                 "selectedIconPath": "image/066.png"
             },
             {
-                "pagePath": "pages/albumPhotos/index",
-                "text": "相册照片",
+                "pagePath": "pages/addTag/index",
+                "text": "标签",
                 "iconPath": "image/06.png",
                 "selectedIconPath": "image/066.png"
             }

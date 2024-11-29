@@ -1,0 +1,33 @@
+/* pages/addTag/index.wxss */
+.addTag_wrap{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.addTag_nav{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 24rpx;
+}
+.addTag_cancel{
+  font-size: 30rpx;
+  color: #000000;
+}
+.addTag_save{
+  width: 100rpx;
+  height: 54rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  border-radius: 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #febf2b;
+}

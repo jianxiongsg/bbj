@@ -1,0 +1,10 @@
+<!--pages/addTag/index.wxml-->
+<view class="addTag_wrap">
+  <view class="addTag_nav">
+    <view class="addTag_cancel">取消</view>
+    <view class="addTag_save">保存</view>
+  </view>
+  <view class="addTag_first_check">
+    <checkbox value="第一次" checked="true" color="red">第一次</checkbox>
+  </view>
+</view>

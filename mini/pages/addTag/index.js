@@ -1,14 +1,11 @@
-import { formatDate } from "../../common/helper/date";
-
-// pages/addLog/index.js
+// pages/addTag/index.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-      uploadTime:'',
-      region:["","",""]
+
     },
 
     /**
@@ -60,24 +57,6 @@ Page({
 
     },
 
-    /**
-     * 时间选择器
-     */
-    bindDateChange:function(e){
-      this.setData({
-        'uploadTime':formatDate(e.detail.value)
-      })
-    },
-    /**
-     * 地址选择器
-     */
-    bindRegionChange:function(e){
-      console.log('picker发送选择改变，携带值为', e.detail.value)
-      this.setData({
-        'region':e.detail.value
-      })
-    },
-    
     /**
      * 用户点击右上角分享
      */
